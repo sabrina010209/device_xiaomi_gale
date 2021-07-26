@@ -1,0 +1,4 @@
+#!/vendor/bin/sh
+TOUCHDEV=$(/vendor/bin/getevent -i | /vendor/bin/grep -B5 -E -i 'NVTCapacitiveTouchScreen|fts_ts' | /vendor/bin/head -n1 | /vendor/bin/grep -oE '[^ ]+$')
+/vendor/bin/sendevent $TOUCHDEV 0 1 $1
+

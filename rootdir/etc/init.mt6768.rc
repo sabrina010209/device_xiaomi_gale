@@ -51,10 +51,10 @@ on late-init
 # mount different fs start
 
 on property:persist.sys.gale.dt2w=0
-    exec /system/bin/sendevent /dev/input/event2 0 1 4
+    exec -- /vendor/bin/dt2w_event 4
 
 on property:persist.sys.gale.dt2w=1
-    exec /system/bin/sendevent /dev/input/event2 0 1 5
+    exec -- /vendor/bin/dt2w_event 5
 
 on charger
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1"
