@@ -1,0 +1,9 @@
+# Firmware - from gale-user 12 SP1A.210812.016 V816.0.3.0.UGPMIXM release-keys
+gz.img;AB
+lk.img;AB
+md1img.img;AB
+preloader_gale.bin:preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
